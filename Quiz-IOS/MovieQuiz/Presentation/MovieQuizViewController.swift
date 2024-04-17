@@ -22,6 +22,8 @@ final class MovieQuizViewController: UIViewController {
         let firstQuestion = convert(model: questions[currentQuestionIndex])
         
         show(quiz: firstQuestion)
+        
+        previewImage.layer.cornerRadius = 20
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
